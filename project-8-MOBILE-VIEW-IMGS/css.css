@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "poppins", sans-serif;
+  display: flex;
+  background-color: rgb(207, 35, 207);
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+
+.phone{
+    position: relative;
+    overflow: hidden;
+    border: 3px solid #eee;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    height: 600px;
+    width: 340px;
+}
+
+
+.phone .content{
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: calc(100% - 50px);
+    width: 100%;
+    transition: opacity 0.3s ease-in-out;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    -moz-transition: opacity 0.3s ease-in-out;
+    -ms-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+}
+
+
+.phone .content.show{
+    opacity: 1;
+}
+
+nav{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-top: -5px;
+    width: 100%;
+}
+
+nav ul{
+    list-style: none;
+    background-color: white;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    height: 60px;
+}
+
+
+nav li{
+    color: #777;
+    cursor: pointer;
+    flex:1;
+    padding: 10px;
+    text-align: center;
+}
+
+nav li p{
+    font-size: 12px ;
+    margin: 2px 0;
+
+}
+
+nav ul li:hover,nav ul li:active{
+    color: rgb(255, 6, 89);
+}
